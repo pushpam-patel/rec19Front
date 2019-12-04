@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <title>Recruitment</title>
+        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="checkbox.css">
+        <link rel="stylesheet" href="genderbox.css">
+
+    </head>
+
+    <body>
+    
+                <div class="container">
+                        <img src="ieee-ssit-logo.png" alt="IEEE-SSIT" title="" style="height:10%; width:20%; margin-left: auto; margin-right: auto; display: block"/></img>
+                <div class="container-text">
+                    <h1>Register</h1>
+                    <p>Please fill in this form to register.</p>
+                </div>
+                <hr>
+                <form id="registrationForm">
+                <input type="text" placeholder="Name" name="fname" id="name" required>
+                <input type="text" placeholder="Registration Number" id="regno" name="registration number" required>
+                <input type="email" placeholder=" VIT Email" name="email" id="email" required>
+                <input type="password" placeholder="Password" name="pass" id="pass" required minlength="6">
+                <input type="number" placeholder="Phone Number" name="pnumber" id="pno" required>
+
+
+                <div class="radio-group">
+                    <input type="radio" id="male" name="gender" value="male"><label for="male">Male</label>
+                    <input type="radio" id="female" name="gender" value="female"><label for="female">Female</label>
+                </div>
+
+
+                <hr>
+
+
+                <div class="domain">
+                    <h1>DOMAIN</h2>
+                        <p class="domain-text">Multiple domains can be chosen</p>
+                </div>
+
+
+
+                <div class="checkbox">
+                    <ul class="ks-cboxtags">
+                        <li><input type="checkbox" id="checkboxOne" name="domains" value="Technical"><label
+                                for="checkboxOne">Technical</label></li>
+                        <li><input type="checkbox" id="checkboxTwo" name="domains" value="Management"><label
+                                for="checkboxTwo">Management</label></li>
+                        <li><input type="checkbox" id="checkboxThree" name="domains" value="Editorial"><label
+                                for="checkboxThree">Editorial</label></li>
+                        <li><input type="checkbox" id="checkboxFour" name="domains" value="Design"><label
+                                for="checkboxFour">Design</label>
+                        </li>
+                    </ul>
+                </div>
+
+                <button type="submit" id="Register" class="registerbtn" style="display: block;">Register</button>
+                <button  id="Sub" class="registerbtn" style="display: none;" disabled>Submitting....</button>
+                </form>
+            </div>
+        
+        <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+     <script type="text/javascript" src="validate.js"></script>
+    </body>
+
+</html>

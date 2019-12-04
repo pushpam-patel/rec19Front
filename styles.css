@@ -1,0 +1,94 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #222227;
+    display: flex;
+    justify-content: center;
+  }
+
+* {box-sizing: border-box}
+
+::placeholder{
+    color: wheat;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus, 
+input:-webkit-autofill:active  {
+    -webkit-box-shadow: 0 0 0 30px #222227 inset !important;
+    -webkit-text-fill-color: wheat;
+}
+
+.container-text{
+    color: wheat;
+}
+
+/* Add padding to containers */
+.container {
+  padding: 16px;
+  flex-direction: column;
+}
+
+/* Full-width input fields */
+input[type=text], input[type=password], input[type=email], input[type=number] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: 2px solid bisque;
+  border-radius: 4px;
+  background: transparent;
+  color: wheat;
+}
+
+input[type=text]:focus, input[type=password]:focus, input[type=email]:focus, input[type=number]:focus {
+  background-color: #5f5f6d;
+  outline: none;
+}
+
+/* Overwrite default styles of hr */
+hr {
+  border: 1px solid bisque;
+  margin-bottom: 25px;
+}
+
+/* Set a style for the submit/register button */
+.registerbtn {
+  background-color: wheat;
+  color: #222227;
+  padding: 16px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 14px;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+.registerbtn:hover {
+  opacity:1;
+}
+
+.domain{
+    display: flex;
+    color: wheat;
+    
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.domain > p{
+    margin: 0px;
+}
+
+@media only screen and (max-width:600px){
+  input[type=text], input[type=password], input[type=email], input[type=number] {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    font-size:24px;
+  }
+}

@@ -1,0 +1,32 @@
+
+input[type=radio] {
+  position: absolute;
+  visibility: hidden;
+  display: none;
+}
+
+label {
+  color: wheat;
+  display: inline-block;
+  cursor: pointer;
+  font-weight: bold;
+  padding: 5px 20px;
+  background: #222227;
+  
+}
+
+input[type=radio]:checked + label{
+  color: #222227;
+  background: wheat;
+}
+
+
+.radio-group {
+  border: solid wheat;
+  display: inline-block;
+  margin: 20px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Roboto');

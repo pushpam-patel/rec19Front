@@ -1,3 +1,4 @@
+
 document.getElementById("registrationForm").addEventListener("submit",validate)
 
 function get_all_users(){
@@ -46,19 +47,19 @@ function validate(e){
 
     if (!(/^(18|19)[A-Z]{3}[0-9]{4}$/.test(regno))){
         console.log(regno)
-        alert("PLEASE ENTER VALID REGISTRATION NUMEBR")
+        alert("Please Enter Valid Registartion Number")
         document.getElementById("Register").style.display="block"
                     document.getElementById("Sub").style.display="none"
         flag = false
     }
     if(!(/@vitstudent.ac.in$/.test(email))){
-        alert("Enter valid VIT mail id")
+        alert("Enter Valid VIT Mail Id")
         flag = false
         document.getElementById("Register").style.display="block"
                     document.getElementById("Sub").style.display="none"
     }
     if(!(/^[0-9]{10}$/.test(pno))){
-        alert("Enter valid phone number")
+        alert("Enter Valid Phone Number")
         flag = false
         document.getElementById("Register").style.display="block"
                     document.getElementById("Sub").style.display="none"
@@ -70,13 +71,13 @@ function validate(e){
         userc.forEach((valse,ind)=>{
             if (valse.regno == regno){
                 flag=false
-                alert("You have already registered with this Registartion Number")
+                alert("You Have Already Registered With This Registartion Number")
                 document.getElementById("Register").style.display="block"
                     document.getElementById("Sub").style.display="none"
             }
             else if (valse.email == email){
                 flag=false
-                alert("You have already registered with this Email ID")
+                alert("You Have Already Registered With This Email ID")
                 document.getElementById("Register").style.display="block"
                     document.getElementById("Sub").style.display="none"
             }
@@ -90,7 +91,7 @@ function validate(e){
                     'Content-type':'application/json'
                 }
             }).then((doc)=>{
-                    alert("YOU HAVE REGISTERES SUCCESSFULLY!!!")
+                    alert("YOU HAVE REGISTERED SUCCESSFULLY!!!")
                     document.getElementById("name").value= ""
                     document.getElementById("regno").value= ""
                     document.getElementById("email").value= ""

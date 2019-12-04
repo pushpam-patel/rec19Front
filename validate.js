@@ -19,7 +19,8 @@ function validate(e){
     console.log("hi")
     var flag = true
     var name = document.getElementById("name").value
-    var regno = toUpperCase(document.getElementById("regno").value)
+    var regno = document.getElementById("regno").value.toUpperCase()
+    console.log(regno)
     var email = document.getElementById("email").value
     var pass = document.getElementById("pass").value
     var pno = document.getElementById("pno").value

@@ -19,7 +19,7 @@ function validate(e){
     console.log("hi")
     var flag = true
     var name = document.getElementById("name").value
-    var regno = document.getElementById("regno").value
+    var regno = toUpperCase(document.getElementById("regno").value)
     var email = document.getElementById("email").value
     var pass = document.getElementById("pass").value
     var pno = document.getElementById("pno").value
@@ -67,7 +67,7 @@ function validate(e){
 
     get_all_users().then((doc)=>{
         let userc = doc
-        console.log(userc)
+     
         userc.forEach((valse,ind)=>{
             if (valse.regno == regno){
                 flag=false
@@ -85,7 +85,7 @@ function validate(e){
         setTimeout(alertFunc, 1000);
         if(flag== true){
             let new_user = {name:name,regno:regno,email: email,pno:Number(pno), password:pass,gender:gen,type:finalDomains}
-            console.log(new_user)
+      
             axios.post('https://dry-dawn-85361.herokuapp.com/register',JSON.stringify(new_user),{
                 headers:{
                     'Content-type':'application/json'

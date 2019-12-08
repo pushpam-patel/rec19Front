@@ -100,6 +100,8 @@ function validate(e){
                     document.getElementById("pno").value= ""
                     document.getElementById("Register").style.display="block"
                     document.getElementById("Sub").style.display="none"
+                    alert("See You at SJT 521/522 on 11th December, from 11:00am to 1:00pm for ROUND1")
+                    
             })
         } 
     

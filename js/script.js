@@ -50,7 +50,7 @@ function myFunction() {
     "18BCE2476",
     "19BCE2523",
     "19BCE2638",
-    "19BCI0044",
+    "19BCT0044",
     "19BCE0345"];
     
     let suc="Congratulations on becoming a part of IEEE-SSIT!!!";
